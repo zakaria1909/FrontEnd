@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function Footer({user}: {user: any}) {
+export default function Footer({ user }: { user: Record<string, any> }) {
   const [profile, setProfile] = useState<any>(null);
 
   useEffect(() => {

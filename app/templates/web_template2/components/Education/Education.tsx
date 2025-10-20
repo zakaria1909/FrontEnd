@@ -26,7 +26,7 @@ interface Profile {
   types: Type[];
 }
 
-export default function Education({user}: {user: any}) {
+export default function Education({ user }: { user: Record<string, any> }) {
   const [educationData, setEducationData] = useState<Content[]>([]);
   const [loading, setLoading] = useState(true);
 

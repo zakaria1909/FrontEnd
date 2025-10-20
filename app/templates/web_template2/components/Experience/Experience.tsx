@@ -20,7 +20,7 @@ interface Profile {
   types: Type[];
 }
 
-export default function ExperienceCarousel({user}: {user: any}) {
+export default function ExperienceCarousel({ user }: { user: Record<string, any> }) {
   const [slides, setSlides] = useState<Content[]>([]);
   const [current, setCurrent] = useState(0);
 

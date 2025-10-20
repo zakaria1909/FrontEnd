@@ -38,7 +38,7 @@ interface Profile {
 }
 
 // ----- KOMPONEN HERO -----
-export default function Hero({user}: {user: any}) {
+export default function Hero({ user }: { user: Record<string, any> }) {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
 

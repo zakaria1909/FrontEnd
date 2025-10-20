@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function Project({user}: {user: any}) {
+export default function Project({ user }: { user: Record<string, any> }) {
   const [projects, setProjects] = useState<any[]>([]);
 
   useEffect(() => {

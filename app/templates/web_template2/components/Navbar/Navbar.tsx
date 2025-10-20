@@ -13,7 +13,7 @@ interface Profile {
   user: number;
 }
 
-export default function Navbar({user}: {user: any }) {
+export default function Navbar({ user }: { user: Record<string, any> }) {
   const [profile, setProfile] = useState<Profile | null>(null);
 
   useEffect(() => {
